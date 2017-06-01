@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import './index.css';
+import { browserHistory } from 'react-router';
+import Root from 'components/Root';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const target = document.getElementById('root');
+
+ReactDOM.render(<Root history={browserHistory} />, target);
