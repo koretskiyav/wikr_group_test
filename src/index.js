@@ -6,9 +6,12 @@ import Root from 'components/Root';
 
 import { API_KEY, API_PREFIX } from 'config';
 import Api from 'api';
+import PostsStore from 'stores/Posts';
 
-window.api = new Api(API_PREFIX, API_KEY);
+const api = new Api(API_PREFIX, API_KEY);
+
+const store = window.store = new PostsStore(api);
 
 const target = document.getElementById('root');
 
-ReactDOM.render(<Root history={browserHistory} />, target);
+ReactDOM.render(<Root history={browserHistory} store={store} />, target);
