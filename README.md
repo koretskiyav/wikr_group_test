@@ -2,8 +2,11 @@
 не нашел в указанном Public API запроса на полный текст статьи, сделал как смог
 ## installation & development
 ` git clone https://github.com/koretskiyav/wikr_group_test.git another_boring_test_task`
+
 `cd another_boring_test_task`
+
 `npm install` or `yarn`
+
 `npm start` or `yarn start`
 ## task
 Реализовать одностраничное приложение на базе React (или приоритетнее React Native), которое будет отображать статьи из [NYT Public API](http://developer.nytimes.com/). Новости можно брать через Archive API за любой период времени. Это приложение должно извлекать ресурс в формате JSON по вызову REST API.
