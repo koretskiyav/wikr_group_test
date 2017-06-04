@@ -2,16 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { browserHistory } from 'react-router';
+import { syncHistoryWithStore } from 'mobx-react-router';
 import Root from 'components/Root';
+import Store from 'stores';
 
-import { API_KEY, API_PREFIX } from 'config';
-import Api from 'api';
-import PostsStore from 'stores/Posts';
+const store = window.store = new Store();
 
-const api = new Api(API_PREFIX, API_KEY);
-
-const store = window.store = new PostsStore(api);
+const history = syncHistoryWithStore(browserHistory, store.routing);
 
 const target = document.getElementById('root');
 
-ReactDOM.render(<Root history={browserHistory} store={store} />, target);
+ReactDOM.render(<Root history={history} store={store} />, target);
