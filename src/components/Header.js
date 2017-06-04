@@ -37,7 +37,7 @@ export default class Header extends Component {
             <Link className={cx('Header-link', { 'Header-link-active': y === year})} to={getUrl(y)}>{y}</Link>
           </li>)}
         </ul>
-        {year && <ul>
+        {!year ? null : <ul>
           {monthsToRender.map(m => <li key={m}>
             <Link className={cx('Header-link', { 'Header-link-active': m === month})} to={getUrl(year, m)}>{m}</Link>
           </li>)}

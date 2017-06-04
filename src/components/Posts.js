@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from 'components/Header';
 import Articles from 'components/Articles';
 import Paginator from 'components/Paginator';
+import './Posts.css';
 
 export default () =>
-  <div>
-    <Header />
+  <div className="Posts">
     <Paginator />
     <Articles />
     <Paginator />

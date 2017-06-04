@@ -1,6 +1,14 @@
 .Header {
   text-align: center;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px 20px;
+  min-height: 60px;
+}
+
+.Header ul {
+  padding: 0px;
 }
 
 .Header li {

@@ -10,10 +10,13 @@ export default class Article extends Component {
   render() {
     const { article } = this.props;
 
+    const img = article.multimedia[0];
+
     return(
-      <p className="Article">
-        {article.snippet}
-      </p>
+      <div className="Article">
+        {img && <img src={`https://static01.nyt.com/${img.url}`} width={img.width} height={img.height} alt="" />}
+        <span>{article.snippet}</span>
+      </div>
     )
   }
 }
