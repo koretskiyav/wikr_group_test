@@ -29,7 +29,6 @@ export default class ApiClient {
       throw new Error('Bad response from server');
     }
 
-    console.log(res.data.response);
-    return res.data;
+    return res.data.response;
   }
 }

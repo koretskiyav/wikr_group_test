@@ -1,0 +1,22 @@
+.Paginator {
+  text-align: center;
+  font-size: 12px;
+}
+
+.Paginator li {
+  display: inline-block;
+  margin: 3px;
+}
+
+.Paginator-link {
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: #550;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.Paginator-link-active {
+  background-color: #aea;
+}

@@ -1,5 +1,6 @@
 .Header {
   text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 .Header li {
@@ -9,6 +10,9 @@
 
 .Header-link {
   padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
   color: #550;
   background-color: #eee;
 }
