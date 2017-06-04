@@ -52,4 +52,9 @@ export default class PostsStore extends Base {
   @action setPage(page) {
     this.page = page;
   }
+
+  @action getDetails(article) {
+    const index = this.data.indexOf(article);
+    this.store.routing.push(`/posts/${index}?year=${this.year}&month=${this.month}`)
+  }
 }
