@@ -1,0 +1,18 @@
+.Header {
+  text-align: center;
+}
+
+.Header li {
+  display: inline-block;
+  margin: 3px;
+}
+
+.Header-link {
+  padding: 4px;
+  color: #550;
+  background-color: #eee;
+}
+
+.Header-link-active {
+  background-color: #ecc;
+}
